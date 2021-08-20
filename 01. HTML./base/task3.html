@@ -5,14 +5,17 @@
     <title>HOW-TO 3</title>
 </head>
 <body>
-<h1>HOW-TO: Программа на Python, Часть 3</h1>
+<p title="логотип Python"><img src="../../04.%20HTML.%20Мультмедиа%20в%20HTML/base/img/логотип%20py.gif"
+                               alt="логотип Python" align="right" width="128" height="128"></p>
+
+<h1 id="#table of contents">HOW-TO: Программа на Python, Часть 3</h1>
 <ul>
   <li><i>Программа на Python — часть 1</i></li>
   <li><i>Программа на Python — часть 2</i></li>
   <li><i>Программа на Python — часть 3</i></li>
 </ul>
 
-<h2>Содержание</h2>
+<h2 id="content">Содержание</h2>
 
 <h3>HOW-TO: Программа на Python, Часть 3</h3>
 
@@ -27,15 +30,17 @@
   присвоение, операторы <b>if</b> и <b>while</b>. Я обещал, что в этой части мы изучим модули и
   функции. Давайте начнём.</p>
 
-<h2>Модули</h2>
+<h2 id="chapter1">Модули</h2>
 
 <p>Модули предлагают способ расширить программирование на Python. Вы можете создать
   свои модули, использовать те, которые поставляются с Python или которые написали
   другие. В самом Python есть сотни модулей, которые облегчают написание программ.
   Список модулей, поставляемых с Python, находится по адресу:
-  <i><a href="http://docs.python.org/modindex.html">http://docs.python.org/modindex.html</a></i>. Некоторые модули предназначены для определённых
+  <i><a target="_blank" href="http://docs.python.org/modindex.html">http://docs.python.org/modindex.html</a></i>. Некоторые модули предназначены для определённых
   операционных систем, но большинство из них кроссплатформенные и работают
-  одинаково на <u>Linux</u>, <u>Mac</u> и <u>Microsoft Windows</u>. Для использования внешнего модуля
+  одинаково на <a target="_blank" href="https://ru.wikipedia.org/wiki/Linux">Linux</a>,
+  <a target="_blank" href="https://ru.wikipedia.org/wiki/Mac_OS">Mac</a>
+    и <a target="_blank" href="https://ru.wikipedia.org/wiki/Windows">Microsoft Windows</a>. Для использования внешнего модуля
   необходимо импортировать его в программу. Один из модулей, поставляемых с Python,
   называется «random». Он даёт возможность генерировать псевдослучайные числа. Мы
   используем этот модуль в нашем первом примере.
@@ -57,7 +62,7 @@
 
 <hr>
 
-<h2>Функции</h2>
+<h2 id="chapter2">Функции</h2>
 
 <p>Когда мы импортировали модуль random, мы использовали функцию <b>randint()</b>. Функция
   — это блок кода, который создан для того, чтобы вызывать его в программе, обычно,
@@ -104,5 +109,17 @@
 
 <p>Как видите, здесь написано меньше кода — 8 строк вместо 12. Если нам нужно будет чтолибо поменять в функции, мы сможем сделать это, не создавая проблем для нашей
   программы. Чтобы вызвать функцию, нужно написать её имя и параметры.</p>
+
+<p style="display: flex; justify-content: space-between">
+    <button title="prev" onClick='location.href="task2.html"'>
+        <img src="../../04.%20HTML.%20Мультмедиа%20в%20HTML/base/img/prev.png" alt="переход на предыдущую страницу">
+</button>
+    <button title="content" onClick='location.href="#content"'>
+        <img src="../../04.%20HTML.%20Мультмедиа%20в%20HTML/base/img/home.png" alt="переход к содержанию">
+</button>
+    <button title="next" onClick='location.href=""'>
+        <img src="../../04.%20HTML.%20Мультмедиа%20в%20HTML/base/img/next.png" alt="переход на следующую страницу">
+</button>
+</p>
 </body>
 </html>

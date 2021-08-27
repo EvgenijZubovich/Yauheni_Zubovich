@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table border="1" width="1350" align="center">
+    <tr>
+        <td>
+            <h1>Простая форма поиска с вариантами:</h1>
+            <form action="http://sc.it-academy.by/fe/form.php" method="get">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="search" maxlength="10" name="text">
+                    <input type="submit" value="Искать"><br>
+                    <input name="Search" type="radio" value="site"> на сайте
+                    <input name="Search" type="radio" value="google"> в google<br>
+                    <em>Длина запроса не более 10 символов</em>
+                </fieldset>
+            </form>
+        </td>
+        <td>
+            <h1>Простая форма поиска с вариантами:</h1>
+            <form action="http://sc.it-academy.by/fe/form.php" method="get">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="search" name="text" required autofocus> <sup>*</sup>
+                    <input type="submit" value="Искать"><br>
+                    <input name="Search1" type="radio" value="site"> на сайте
+                    <input name="Search1" type="radio" value="google"> в google<br>
+                    <em>* - обязательное поле</em><br>
+                    <em>Автофокус в поле поиска</em>
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h1>Простая форма авторизации:</h1>
+            <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                <fieldset>
+                    <legend>Авторизируйтесь</legend>
+                    <input type="text" required name="login"> <sup>*</sup> Логин<br>
+                    <input type="password" required name="password"> <sup>*</sup> Пароль<br>
+                    <input type="checkbox" name="forever" checked> Оставаться в системе<br>
+                    <input type="submit" value="Войти"><br>
+                    <em>* - обязательное поле</em>
+                </fieldset>
+            </form>
+        </td>
+        <td>
+            <h1>Опрос(голосование):</h1>
+            <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                <fieldset>
+                    <legend>Как вам?</legend>
+                    <input name="appreciate1" type="radio" value="nothing"> ничего<br>
+                    <input name="appreciate2" type="radio" value="not bad"> неплохо<br>
+                    <input name="appreciate3" type="radio" value="OK"> хорошо<br>
+                    <input name="appreciate4" type="radio" value="super"> супер<br>
+                    <input type="submit" value="Отправить"><br>
+                    <em>Есть скрытое поле name=date_voite, value="2013.12.31"</em><br>
+                    <input type="hidden" name="date_voite" value="2013.12.31">
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h1>Отзыв:</h1>
+            <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                <fieldset>
+                    <legend>Оставьте Ваш отзыв</legend>
+                    <input type="text" required name="login"> <sup>*</sup> Имя<br>
+                    <input type="email" required name="email" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"> <sup>*</sup> e-mail<br>
+                    <textarea name="comment" cols="30" rows="10"></textarea><br>
+                    <input type="submit" value="Отправить"><br>
+                    <em>* - обязательное поле<br>
+                        поле email - с проверкой<br>
+                        метод POST</em>
+                </fieldset>
+            </form>
+        </td>
+        <td>
+            <h1>Выпадающий и мульти списки:</h1>
+            <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                <fieldset>
+                    <legend>Города РБ</legend>
+                    <select name="cities">
+                        <optgroup label="Города РБ">
+                            <option value="cities_b1">Брест</option>
+                            <option value="cities_b2">Минск</option>
+                            <option value="cities_b3">Витебск</option>
+                        </optgroup>
+                        <optgroup label="Города России">
+                             <option value="cities_r1">Москва</option>
+                             <option value="cities_r2">Рязань</option>
+                             <option value="cities_r3">Магадан</option>
+                        </optgroup>
+                    </select>
+                    <select name="cities" size="6" multiple>
+                        <optgroup label="Города РБ">
+                            <option value="cities_b1">Брест</option>
+                            <option value="cities_b2">Минск</option>
+                            <option value="cities_b3">Витебск</option>
+                        </optgroup>
+                        <optgroup label="Города России">
+                             <option value="cities_r1">Москва</option>
+                             <option value="cities_r2">Рязань</option>
+                             <option value="cities_r3">Магадан</option>
+                        </optgroup>
+                    </select>
+                    <input type="submit" value="Ок">
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h1>Загрузка файла на сервер:</h1>
+            <form action="http://sc.it-academy.by/fe/form.php" enctype="multipart/form-data" method="post">
+                <fieldset>
+                    <legend>Upload</legend>
+                    Файл:<br>
+                    <input type="file" name="f" multiple><br>
+                    Срок хранения (года):<br>
+                    <input type="number" name="num">
+                    <input type="submit" value="Загрузить"><br>
+                    Метод POST<br>
+                    В теге form используйте атрибут<br>
+                    enctype="multipart/form-data" для отправки<br>
+                    файла на сервер
+                </fieldset>
+            </form>
+        </td>
+        <td>
+            <h1>Валидация данных HTML5:</h1>
+            <form action="http://sc.it-academy.by/fe/form.php" method="post">
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="search" name="text" pattern="[А-Яа-яЁё]" placeholder="Только русские буквы"><br>
+                    Телефонный номер в формате<br>
+                    +ХХХ-ХХ-ХХХХХХХ, где Х - любое число<br>
+                    <input type="tel" name="tel" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{7}" placeholder="+375-29-1234567" maxlength="15"><br>
+                    <input type="submit" value="Проверить">
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>

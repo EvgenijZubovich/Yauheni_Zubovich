@@ -1,0 +1,23 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+h1{
+    font-size: 2em;
+    text-align: center;
+}
+span{
+    font-family:'LongCang-Regular', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+}
+h3{
+    font: normal small-caps bold 20px/25px 'LongCang-Regular', sans-serif;
+}
+p{
+    font-weight: normal;
+    line-height: 41px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
